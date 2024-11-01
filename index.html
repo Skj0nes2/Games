@@ -1,31 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Games</title>
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+    <html>
+        <head>
+            <title>Files</title>
+            <style>
+                body{
+                    background-color: black;
+                }
+                #title{
+                    color: white;
+                    font-family: 'Times New Roman', Verdana, Sans-Serif, Helvetica, Arial;
+                    font-weight: 900 bolder;
+                    font-size: 32px;
+                }
+                .link{
+                    color: white;
+                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
+                    font-weight: 300 bold;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+                .catagory{
+                    color: white;
+                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
+                    font-weight: 300 bold;
+                    font-size: 20px;
+                }
+                .dropdown{
+                    color: white;
+                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
+                    font-weight: 300 bold;
+                    font-size: 20px;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+                /* Catagories */
+                #htmlGames{
+                    display: none;
+                }
+            </style>
+        </head>
+        <body>
+            <h1 id="title">Games: </h1>
+            <h1 class="dropdown" onclick="showHtmlGames()">HTML 5: </h1>
+            <div id="htmlGames">       
+            <a class="link" href="Games/Cell-Machine/cellMachine.html">Cell Machine</a>
+           
 
-    <!-- Templates
-
-    Catagory Html
-    ------------------------------------------------------------------
-    <h2 class="catagory" onclick="FUNCTION_NAME()">CATAGORY_NAME: </h2>
-        <div id="ID_NAME">
-            <a class="link" href=""></a>
-        </div>  
-    -->
-    <body>
-        <!-- Title -->
-        <h1>Games: </h1>  
-        
-        <!-- Games -->
-
-        <!-- HTML 5 Games -->
-        <h2 class="catagory" onclick="showHtmlGames()">HTML 5 Games: </h2>
-        <div id="htmlGames">
-            <a class="link" href=""></a>
-        </div>    
-
-        <script href="main.js" type="text/javascript"></script>
-    </body>
-</html>
+            <script>
+                function showHtmlGames(){
+                    var gamesHtml = document.getElementById("htmlGames");
+                    if (gamesHtml.style.display === "block") {
+                        gamesHtml.style.display = "none";
+                    }
+                    
+                    else {
+                        gamesHtml.style.display = "block";
+                    }
+                }
+            </script>
+        </body>
+    </html>
