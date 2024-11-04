@@ -11,6 +11,7 @@
                     font-family: 'Times New Roman', Verdana, Sans-Serif, Helvetica, Arial;
                     font-weight: 900 bolder;
                     font-size: 32px;
+                    user-select: none;
                 }
                 .link{
                     color: white;
@@ -18,13 +19,9 @@
                     font-weight: 300 bold;
                     font-size: 18px;
                     text-decoration: none;
+                    user-select: none;
                 }
-                .catagory{
-                    color: white;
-                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
-                    font-weight: 300 bold;
-                    font-size: 20px;
-                }
+                
                 .dropdown{
                     color: white;
                     font-family: Verdana, Sans-Serif, Helvetica, Arial;
@@ -32,6 +29,7 @@
                     font-size: 20px;
                     width: fit-content;
                     cursor: pointer;
+                    user-select: none;
                 }
                 /* Catagories */
                 #htmlGames{
@@ -42,9 +40,13 @@
         <body>
             <h1 id="title">Games: </h1>
             <h1 class="dropdown" onclick="showHtmlGames()">HTML 5: </h1>
-            <div id="htmlGames">       
-            <a class="link" href="Games/Cell-Machine/cellMachine.html">Cell Machine</a>
-           
+            <div id="htmlGames"> 
+            <hr>      
+            <a class="link" href="Games/Cell-Machine/index.html">Cell Machine</a><br>
+            <a class="link" href="Games/Doodle-Jump/index.html">Doodle Jump</a><br>
+            <a class="link" href="Games/2048/index.html">2048</a><br>
+            <hr>
+            </div>
 
             <script>
                 function showHtmlGames(){
