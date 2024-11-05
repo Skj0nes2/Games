@@ -2,6 +2,12 @@
     <html>
         <head>
             <title>Files</title>
+            <script>
+                window.addEventListener('beforeunload', function (event) {
+                    event.preventDefault();
+                    return (event.returnValue = "");
+                });
+            </script>
             <style>
                 body{
                     background-color: black;
