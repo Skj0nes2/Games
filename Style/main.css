@@ -1,0 +1,70 @@
+.text{
+    color: white;
+}
+body{
+    background-color: black;
+}
+#title{
+    font-family: 'Times New Roman', Verdana, Sans-Serif, Helvetica, Arial;
+    font-weight: 900 bolder;
+    font-size: 32px;
+    user-select: none;
+}
+.link{
+    font-family: Verdana, Sans-Serif, Helvetica, Arial;
+    font-weight: 300 bold;
+    font-size: 18px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.dropdown{
+    font-family: Verdana, Sans-Serif, Helvetica, Arial;
+    font-weight: 300 bold;
+    font-size: 20px;
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+}
+/* Catagories */
+#htmlGames{
+    display: none;
+}
+#iconBefore{
+    display: block;
+    margin: 5px;
+}
+#iconAfter{
+    display: none;
+    margin: 5px;
+}
+#settings:hover #iconBefore{
+    display: none;
+}
+#settings:hover #iconAfter{
+    display: block;
+}
+#settings{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    cursor: pointer;
+    animation-name: rotate360;
+}
+#settingsMenu{
+    position: fixed;
+    border: white solid 3px;
+    border-radius: 5px;
+    padding: 10px;
+    right: 0;
+    background-color: black;
+    width: 250px;
+    min-height: 150px;
+    max-height: 350px;
+    overflow: scroll;
+    display: none;
+}
+#settingsTitle{
+    text-align: center;
+}

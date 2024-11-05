@@ -2,69 +2,29 @@
     <html>
         <head>
             <title>Files</title>
-            <script>
-                window.onbeforeunload = () => {
-                    return true;
-                });
-            </script>
-            <style>
-                body{
-                    background-color: black;
-                }
-                #title{
-                    color: white;
-                    font-family: 'Times New Roman', Verdana, Sans-Serif, Helvetica, Arial;
-                    font-weight: 900 bolder;
-                    font-size: 32px;
-                    user-select: none;
-                }
-                .link{
-                    color: white;
-                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
-                    font-weight: 300 bold;
-                    font-size: 18px;
-                    text-decoration: none;
-                    user-select: none;
-                }
-                
-                .dropdown{
-                    color: white;
-                    font-family: Verdana, Sans-Serif, Helvetica, Arial;
-                    font-weight: 300 bold;
-                    font-size: 20px;
-                    width: fit-content;
-                    cursor: pointer;
-                    user-select: none;
-                }
-                /* Catagories */
-                #htmlGames{
-                    display: none;
-                }
-            </style>
+            <script src="https://kit.fontawesome.com/f3a18278c6.js" crossorigin="anonymous"></script>
+            <script>/*window.onbeforeunload = () => {return true; };*/</script>
+            <link rel="stylesheet" href="Style/main.css">
+            <script src="JS/main.js"></script>
         </head>
-        <body>
-            <h1 id="title">Games: </h1>
-            <h1 class="dropdown" onclick="showHtmlGames()">HTML 5: </h1>
+        <body id="body">
+            <h1 id="title" class="text">Games: </h1>
+            <div id="settings" onclick="showSettingsMenu()">
+            <i id="iconBefore" class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i>
+            <i id="iconAfter" class="fa-solid fa-gear fa-lg fa-spin" style="color: #ffffff;"></i>
+            </div>
+            <div id="settingsMenu">
+                <h2 id="settingsTitle" class="text">Settings: </h2>
+                <h3 id="settingsTitle" class="text">Nothing here yet! :)</h3>
+            </div>
+            <h1 class="dropdown text" onclick="showHtmlGames()">HTML 5: </h1>
             <div id="htmlGames"> 
             <hr>      
-            <a class="link" href="HTML5/Cell-Machine/index.html">Cell Machine</a><br>
-            <a class="link" href="HTML5/Doodle-Jump/index.html">Doodle Jump</a><br>
-            <a class="link" href="HTML5/2048/index.html">2048</a><br>
-            <a class="link" href="HTML5/Duck-Life-4/index.html">Duck Life 4</a><br>
+            <a class="link text" href="HTML5/Cell-Machine/index.html">Cell Machine</a><br>
+            <a class="link text" href="HTML5/Doodle-Jump/index.html">Doodle Jump</a><br>
+            <a class="link text" href="HTML5/2048/index.html">2048</a><br>
+            <a class="link text" href="HTML5/Duck-Life-4/index.html">Duck Life 4</a><br>
             <hr>
             </div>
-
-            <script>
-                function showHtmlGames(){
-                    var gamesHtml = document.getElementById("htmlGames");
-                    if (gamesHtml.style.display === "block") {
-                        gamesHtml.style.display = "none";
-                    }
-                    
-                    else {
-                        gamesHtml.style.display = "block";
-                    }
-                }
-            </script>
         </body>
     </html>
