@@ -3,9 +3,10 @@
         <head>
             <title>Files</title>
             <script>
-                window.addEventListener('beforeunload', function (event) {
+                window.addEventListener('beforeunload', (event) => {
                     event.preventDefault();
-                    return (event.returnValue = "");
+                    event.returnValue = '';
+                    return confirm("Are you sure you want to leave this page?");
                 });
             </script>
             <style>
